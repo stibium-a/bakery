@@ -438,14 +438,13 @@ body:has(.menu-toggler-btn.active) {
 .slick-track {
   display: flex;
 }
-.pancakes-big-slider .slick-arrow {
-  display: none;
-}
 
 .pancakes-big-slider__item {
   position: relative;
 }
+
 .pancakes-big-slider__img {
+  aspect-ratio: 0.785;
 }
 
 .rating-box {
@@ -479,7 +478,7 @@ body:has(.menu-toggler-btn.active) {
     url('../images/pancakes-content-bg.png')
    );
   background-position: right bottom;
-  background-size: 100%;
+  background-size: 50%;
   background-repeat: no-repeat;
   padding: 70px 50px 35px;
 }

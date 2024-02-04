@@ -20,6 +20,7 @@ menuTogglerBtn.addEventListener('keyup', (e)=>{
 $(document).ready(function () {
   $('.pancakes-big-slider').slick({
     infinite: true,
+    arrows: false,
   });
   
   $('.small-alider').slick({
