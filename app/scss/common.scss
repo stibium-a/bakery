@@ -1,6 +1,7 @@
 body {
   font-family: 'Proxima-Nova';
   font-size: 14px;
+  font-weight: 400;
   color: $color-text;
 }
 
@@ -12,8 +13,6 @@ body {
 
 .subtitle {
   text-align: center;
-  font-family: 'Proxima-Nova';
-  font-weight: 400;
   font-size: 24px;
   line-height: 1.7;
 }
@@ -38,7 +37,15 @@ body {
   }
 }
 
-.section-descr {
+.section-title {
+  font-family: 'Alegreya';
+  font-weight: 700;
+  font-size: 48px;
+  color: $color-text;
+  line-height: 0.625;
+}
+
+.section-subtitle {
   font-family: 'Alegreya';
   font-weight: 700;
   letter-spacing: 1px;

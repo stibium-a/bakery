@@ -285,15 +285,10 @@ body:has(.menu-toggler-btn.active) {
 }
 
 .cakes__title {
-  font-family: 'Alegreya';
-  font-weight: 700;
-  font-size: 48px;
-  color: $color-text;
-  line-height: 0.625;
   margin-bottom: 20px;
 }
 
-.cakes__descr {
+.cakes__subtitle {
   margin-bottom: 70px;
 }
 
@@ -429,6 +424,7 @@ body:has(.menu-toggler-btn.active) {
 .pancakes-slider-big {
   max-width: 420px;
   width: 100%;
+  flex: 1;
 }
 
 .pancakes-big-slider {
@@ -442,33 +438,64 @@ body:has(.menu-toggler-btn.active) {
 .slick-track {
   display: flex;
 }
+.pancakes-big-slider .slick-arrow {
+  display: none;
+}
+
 .pancakes-big-slider__item {
+  position: relative;
 }
 .pancakes-big-slider__img {
 }
-.rating-box {
 
+.rating-box {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
+
 .rating-star {
 
 }
 .rating-star-empty {
 
 }
+
 .pancakes__content {
+  max-width: 545px;
+  width: 100%;
+  flex: 1;
+  position: relative;
+  background-color: #fff;
+  background-image: image-set(
+    url('../images/pancakes-content-bg.webp'),
+    url('../images/pancakes-content-bg.png')
+   );
+  background-position: right bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 70px 50px 35px;
 }
-.section-title {
-}
+
 .pancakes__title {
+  margin-bottom: 10px;  
 }
-.section-subtitle {
-}
+
 .pancakes__subtitle {
+  margin-bottom: 65px;
 }
-.text {
-}
+
 .pancakes__text {
+  margin-bottom: 100px;
 }
+
 .pancakes-slider-small {
 }
 .small-alider {

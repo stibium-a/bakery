@@ -18,5 +18,14 @@ menuTogglerBtn.addEventListener('keyup', (e)=>{
 });
 
 $(document).ready(function () {
-  $('.pancakes-big-slider').slick({});
+  $('.pancakes-big-slider').slick({
+    infinite: true,
+  });
+  
+  $('.small-alider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+    asNavFor: '.pancakes-big-slider',
+  });
 });
