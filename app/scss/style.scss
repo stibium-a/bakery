@@ -501,8 +501,12 @@ body:has(.menu-toggler-btn.active) {
 }
 .small-slider__item {
 }
+
 .small-slider__img {
+  display: block;
+  margin: 0 auto;
 }
+
 .pancakes__tip {
 }
 .pancakes__ready {
