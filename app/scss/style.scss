@@ -536,12 +536,44 @@ body:has(.menu-toggler-btn.active) {
 }
 
 .pancakes__tip {
+  position: absolute;
+  top: -60px;
+  right: -100px;
+  height: 200px;
+  width: 200px;
+  padding: 30px 20px;
+  text-align: center;
+  font-family: 'Alegreya';
+  font-weight: 700;
+  background-image: image-set(
+    url('../images/pancakes-tip-bg.webp'),
+    url('../images/pancakes-tip-bg.jpg')
+   );
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: -10px 10px 20px #00000045; 
 }
+
 .pancakes__ready {
+  font-size: 18px;
+  line-height: 1.67;
+  text-transform: uppercase;
+  color: #a47d5e;
+  margin-bottom: 40px;
 }
+
 .pancakes__ready-time {
+  font-size: 92px;
+  line-height: 0.32;
+  color: #dfc691;
+  margin-bottom: 30px;
 }
+
 .pancakes__timing {
+  font-size: 18px;
+  line-height: 1.67;
+  color: #979285;
 }
 
 
