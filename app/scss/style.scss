@@ -498,14 +498,41 @@ body:has(.menu-toggler-btn.active) {
 
 .pancakes-slider-small {
 }
-.small-alider {
+
+.small-slider {
+  position: relative;
+  padding: 0 40px;
 }
+
 .small-slider__item {
 }
 
 .small-slider__img {
   display: block;
   margin: 0 auto;
+}
+
+.small-slider .slick-arrow{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0;
+  width: 32px;
+  height: 32px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 10;
+}
+
+.small-slider .slick-arrow.slick-prev{
+  background-image: url(../images/arrow-left.svg);
+  left: 0;
+}
+
+.small-slider .slick-arrow.slick-next{
+  background-image: url(../images/arrow-right.svg);
+  right: 0;
 }
 
 .pancakes__tip {

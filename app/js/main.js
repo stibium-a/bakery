@@ -23,7 +23,7 @@ $(document).ready(function () {
     arrows: false,
   });
   
-  $('.small-alider').slick({
+  $('.small-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     infinite: true,
