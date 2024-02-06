@@ -512,26 +512,32 @@ body:has(.menu-toggler-btn.active) {
   margin: 0 auto;
 }
 
-.small-slider .slick-arrow{
+.small-slider .small-slider-arrow{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 0;
+  font-size: 14px;
   width: 32px;
   height: 32px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  border: 3px solid;
+  border-color: #76736e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 10;
+  transition: all 0.4s;
+  &:hover {
+    color: #dbc1ab;
+    border-color: #dbc1ab;
+  }
 }
 
-.small-slider .slick-arrow.slick-prev{
-  background-image: url(../images/arrow-left.svg);
+.small-slider .small-alider-prev{
   left: 0;
 }
 
-.small-slider .slick-arrow.slick-next{
-  background-image: url(../images/arrow-right.svg);
+.small-slider .small-slider-next{
   right: 0;
 }
 

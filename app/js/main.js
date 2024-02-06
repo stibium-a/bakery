@@ -27,6 +27,8 @@ $(document).ready(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     infinite: true,
+    prevArrow: '<button class="small-slider-arrow small-alider-prev" aria-label="prev"><i class="fa-solid fa-chevron-left"></i></button>',
+  nextArrow: '<button class="small-slider-arrow small-slider-next" aria-label="next"><i class="fa-solid fa-chevron-right"></i></button>',
     asNavFor: '.pancakes-big-slider',
   });
 });
