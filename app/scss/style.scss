@@ -579,6 +579,22 @@ body:has(.menu-toggler-btn.active) {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 440px;
+    height: 355px;
+    background-image: image-set(
+      url('../images/breakfast-box-decor.webp'),
+      url('../images/breakfast-box-decor.png')
+    );
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: right bottom 50%;
+  }
 }
 
 .breakfast__inner {
@@ -783,6 +799,7 @@ body:has(.menu-toggler-btn.active) {
   font-weight: 700;
   line-height: 1.667;
   text-align: center;  
+  text-transform: uppercase;
   transition: all 0.4s;
   @media (any-hover: hover) {
     &:hover {
