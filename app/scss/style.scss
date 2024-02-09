@@ -869,50 +869,164 @@ body:has(.menu-toggler-btn.active) {
 /*----------- JIBARITO ----------------------*/
 
 .jibarito {
+  background-color: #f3f1e9;
 }
-.container {
-}
+
 .jibarito__inner {
+  padding: 90px 0;
+  text-align: center;
+  position: relative;
+  &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      width: 700px;
+      height: 135px;
+      background-image: image-set(
+        url('../images/jibarito-decor.webp'),
+        url('../images/jibarito-decor.png')
+      );
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+  }
 }
-.section-title {
-}
+
 .jibarito__title {
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
 }
-.section-subtitle {
-}
+
 .jibarito__subtitle {
+  position: relative;
+  z-index: 2;
 }
+
 .jibarito__content {
+  display: flex;
+  align-items: center;
 }
+
 .jibarito__content-item {
+  flex: 1;
 }
+
 .jibarito__ingredients {
+  font-family: 'Alegreya';
+  max-width: 330px;
+  padding: 0 15px;
 }
+
 .jibarito__ingredients__item {
+  margin-bottom: 40px;
+  padding: 10px 0;
+  text-align: center;
 }
+
 .jibarito__ingredients__img {
+  display: block;
+  width: 119px;
+  height: 119px;
+  margin: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
 }
+
 .jibarito__ingredients__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1;
+  color: #979285;
 }
+
 .jibarito__ingredients__description {
+
 }
+
 .jibarito__picture {
+  position: relative;
 }
+
 .jibarito__picture-box {
 }
 .jibarito__picture-img {
 }
+
 .jibarito__picture-properties {
+  position: absolute;
+  width: 20%;
+  height: 112%;
+  right: 55px;
+  top: -5%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-family: 'Alegreya';
+  font-weight: 700;
 }
+
 .jibarito__picture-property {
+  background-color: rgba(255,255,255,0.8);
+  padding: 45px 15px;
+  text-align: center;
+  &:not(:has(+ .jibarito__picture-property)) {
+    background: url(../images/jibarito-ready-in-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
+
 .jibarito__picture-property-title {
+  font-size: 18px;
+  line-height: 1.67;
+  margin-bottom: 20px;
+  color: #a47d5e;
+  text-transform: uppercase;
 }
+
 .jibarito__picture-property-timing-value {
+  margin-bottom: 15px;
+  font-size: 60px;
+  line-height: 0.5;
+  letter-spacing: 5px;
 }
+
 .jibarito__picture-property-timing {
+  font-size: 18px;
+  color: #979285;
 }
+
 .jibarito__picture-button {
+  position: absolute;
+  left: 15px;
+  bottom: -16px;
+  width: 170px;
+  height: 55px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed $color-gold-light;
+  background-color: $color-white;
+  font-family: 'Alegreya';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.6;
+  color: $color-gold-light;
+  text-transform: uppercase;
+  transition: all 0.4s;
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: #c9b176;
+      color: $color-white;
+      border-color: $color-white;
+    }
+  }
 }
 
 
