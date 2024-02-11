@@ -32,7 +32,7 @@
   padding: 10px 0 5px;
 }
 
-.header__inner {
+.header-top__inner {
   display: flex;
   justify-content: space-between;
 }
@@ -202,6 +202,12 @@ body:has(.menu-toggler-btn.active) {
   justify-content: center;
   color: $color-white;
   position: relative;
+}
+
+.header__content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title {
