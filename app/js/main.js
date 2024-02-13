@@ -30,6 +30,20 @@ $(document).ready(function () {
     prevArrow: '<button class="small-slider-arrow small-alider-prev" aria-label="prev"><i class="fa-solid fa-chevron-left"></i></button>',
     nextArrow: '<button class="small-slider-arrow small-slider-next" aria-label="next"><i class="fa-solid fa-chevron-right"></i></button>',
     asNavFor: '.pancakes-big-slider',
+    responsive: [
+      {
+        breakpoint: 785,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1
+        }
+      },
+    ]
   });
 
   /*------ breakfast slider ---------*/

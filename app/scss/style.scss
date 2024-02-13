@@ -399,7 +399,6 @@ body:has(.menu-toggler-btn.active) {
   justify-content: center;
   background-image: image-set(url('../images/cakes-img-all.webp'),
       url('../images/cakes-img-all.png'));
-/*  background-position: left top 12px;*/
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -420,7 +419,6 @@ body:has(.menu-toggler-btn.active) {
 /*-------- PANCAKES -----------*/
 
 .pancakes {
-  display: none;
   background-image: image-set(url('../images/pancakes-bg.webp'),
       url('../images/pancakes-bg.jpg'));
   background-position: center;
@@ -535,7 +533,7 @@ body:has(.menu-toggler-btn.active) {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10;
+  z-index: 1;
   transition: all 0.4s;
 
   &:hover {
@@ -1161,6 +1159,17 @@ body:has(.menu-toggler-btn.active) {
       padding-right: 20px;
     }
   }
+
+  .pancakes__box {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: auto;
+  }
+
+  .pancakes-slider-big {
+    max-width: 545px;
+  }
+
  
 }
 
@@ -1272,6 +1281,19 @@ body:has(.menu-toggler-btn.active) {
       fill: $color-white;
     }
   }
+
+  
+  .pancakes__tip {
+    width: 145px;
+    height: 145px;
+    right: 100px;
+    top: -90px;
+    padding: 10px 20px;
+  }
+
+  .pancakes__ready {
+    margin-bottom: 15px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1285,5 +1307,13 @@ body:has(.menu-toggler-btn.active) {
   
   .chief-quote::after {
     right: -5px;
+  }
+
+  .pancakes__content {
+    padding: 85px 15px 35px;
+  }
+
+  .pancakes__text {
+    margin-bottom: 50px;
   }
 }

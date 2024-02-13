@@ -40,7 +40,7 @@ body {
 .section-title {
   font-family: 'Alegreya';
   font-weight: 700;
-  font-size: 48px;
+  font-size: clamp(36px, 1.977rem + 1.36vw, 48px);
   color: $color-text;
   line-height: 0.625;
 }
