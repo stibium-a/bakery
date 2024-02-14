@@ -347,6 +347,10 @@ body:has(.menu-toggler-btn.active) {
 
 .chief-name {}
 
+.chief-photo-box {
+  flex: 0 0 auto;
+}
+
 .chef-photo {
   display: block;
   height: 100px;
@@ -846,6 +850,7 @@ body:has(.menu-toggler-btn.active) {
 }
 
 .dp-wrap {
+  padding-bottom: 115%;
   margin: 0 auto;
   position: relative;
   perspective: 1000px;
@@ -903,6 +908,9 @@ body:has(.menu-toggler-btn.active) {
   margin: 35px auto  0 auto;
   justify-content: flex-start;
   gap: 30px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .slider-dot {
@@ -923,6 +931,7 @@ body:has(.menu-toggler-btn.active) {
 /*----------- JIBARITO ----------------------*/
 
 .jibarito {
+  display: none;
   background-color: #f3f1e9;
 }
 
@@ -1230,7 +1239,6 @@ body:has(.menu-toggler-btn.active) {
   }
 
   #slider {
-    padding-bottom: 115%;
     margin-left: 0;
   }
 
@@ -1324,7 +1332,6 @@ body:has(.menu-toggler-btn.active) {
     }
   }
 
-  
   .pancakes__tip {
     width: 145px;
     height: 145px;
@@ -1343,14 +1350,15 @@ body:has(.menu-toggler-btn.active) {
     }
   }
 
-  #slider {
-    padding-bottom: 127%;
+  .dp-wrap {
+    padding-bottom: 125%;
   }
 
 }
 
+
 @media screen and (max-width: 560px) {
-  #slider {
+  .dp-wrap {
     padding-bottom: 140%;
   }
 
@@ -1375,7 +1383,19 @@ body:has(.menu-toggler-btn.active) {
 @media screen and (max-width: 480px) {
 
   .cakes__chief-box {
-    gap: 5px;
+    padding: 0;
+    gap: 10px;
+    width: 90%;
+    flex-wrap: wrap;
+  }
+
+  .chef-photo {
+    margin: auto;
+  }
+
+  .chief-photo-box {
+    width: 100%;
+    order: -1;
   }
 
   .chief-quote::before {
@@ -1398,8 +1418,8 @@ body:has(.menu-toggler-btn.active) {
     width: 100%;
   }
 
-  #slider {
-    padding-bottom: 130%;
+  .dp-wrap {
+    padding-bottom: 155%;
   }
 
   .menu-card__title, 
@@ -1409,7 +1429,7 @@ body:has(.menu-toggler-btn.active) {
 }
 
 @media screen and (max-width: 375px) {
-  #slider {
-    padding-bottom: 150%;
+  .dp-wrap {
+    padding-bottom: 170%;
   }
 }
