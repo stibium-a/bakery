@@ -1,6 +1,25 @@
 const menuBox = document.querySelector('.nav');
 const menuTogglerBtn = document.querySelector('.menu-toggler-btn');
 
+const breakfastSliderWrap = document.querySelector('.dp-wrap');
+const breakfastBiggestItem = document.querySelector('.menu-card[data-position="1"');
+
+
+window.addEventListener('DOMContentLoaded', setBreakfastSliderWrapHeight);
+
+window.addEventListener('resize', setBreakfastSliderWrapHeight);
+
+function setBreakfastSliderWrapHeight() {
+  let currentWidth = window.innerWidth;
+  
+  if (currentWidth < 929){
+    let currentMaxHeight = breakfastBiggestItem.getBoundingClientRect().height;
+     
+    currentWidth < 480 ? breakfastSliderWrap.style.height = currentMaxHeight + 80 + 'px' : breakfastSliderWrap.style.height = currentMaxHeight + 100 + 'px';
+  }
+  if(currentWidth == 929 || currentWidth > 929) breakfastSliderWrap.style.height = 'auto';
+};
+
 menuTogglerBtn.addEventListener('click', () => {
   menuTogglerBtn.classList.toggle('active');
   menuBox.classList.toggle('active');
@@ -54,7 +73,7 @@ $(document).ready(function () {
     $("#dp-dots li").removeClass("active");
     $("#dp-dots li[data-class=" + get_active + "]").addClass("active");
   }
-  $("#dp-next").click(function () {
+  /*$("#dp-next").click(function () {
     var total = $(".dp_item").length;
     $("#dp-slider .dp_item:first-child").hide().appendTo("#dp-slider").fadeIn();
     $.each($('.dp_item'), function (index, dp_item) {
@@ -73,7 +92,7 @@ $(document).ready(function () {
 
     detect_active();
   });
-
+*/
   $("#dp-dots li").click(function () {
     $("#dp-dots li").removeClass("active");
     $(this).addClass("active");
