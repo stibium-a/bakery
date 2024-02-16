@@ -2,7 +2,6 @@ const menuBox = document.querySelector('.nav');
 const menuTogglerBtn = document.querySelector('.menu-toggler-btn');
 
 const breakfastSliderWrap = document.querySelector('.dp-wrap');
-const breakfastBiggestItem = document.querySelector('.menu-card[data-position="1"');
 
 
 window.addEventListener('DOMContentLoaded', setBreakfastSliderWrapHeight);
@@ -10,6 +9,7 @@ window.addEventListener('DOMContentLoaded', setBreakfastSliderWrapHeight);
 window.addEventListener('resize', setBreakfastSliderWrapHeight);
 
 function setBreakfastSliderWrapHeight() {
+  let breakfastBiggestItem = document.querySelector('.menu-card[data-position="1"');
   let currentWidth = window.innerWidth;
   
   if (currentWidth < 929){
