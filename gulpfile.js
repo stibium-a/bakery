@@ -105,7 +105,7 @@ function building() {
     '!app/images/stack/*.html',
     'app/images/*.*',
     '!app/images/*.svg',
-    'app/images/sprite.svg',
+    '!app/images/sprite.svg',
     'app/css/style.min.css',
     'app/fonts/*.*',
     'app/js/main.min.js',
