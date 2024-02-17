@@ -42,10 +42,6 @@
   justify-content: space-between;
 }
 
-.logo {}
-
-.logo-img {}
-
 .nav {
   padding-top: 7px;
 }
@@ -138,11 +134,7 @@
   transition: all 0.4s;
 }
 
-.social-box--desctop {}
-
-
 /* ----------------- */
-
 
 .menu-toggler-btn {
   display: none;
@@ -241,8 +233,6 @@ body:has(.menu-toggler-btn.active) {
   letter-spacing: 2.25px;
 }
 
-.header__btn {}
-
 .header__decor-img-box {
   position: absolute;
   width: 106px;
@@ -263,7 +253,6 @@ body:has(.menu-toggler-btn.active) {
     transform: translate(-50%, -50%);
     z-index: -1;
   }
-
 }
 
 .header__decor-img {
@@ -346,8 +335,6 @@ body:has(.menu-toggler-btn.active) {
   letter-spacing: 1px;
 }
 
-.chief-name {}
-
 .chief-photo-box {
   flex: 0 0 auto;
 }
@@ -358,8 +345,6 @@ body:has(.menu-toggler-btn.active) {
   width: 100px;
   border-radius: 50%;
 }
-
-.chief-sername {}
 
 .chief-quote {
   font-family: 'Scriptina';
@@ -479,10 +464,6 @@ body:has(.menu-toggler-btn.active) {
   justify-content: space-between;
 }
 
-.rating-star {}
-
-.rating-star-empty {}
-
 .pancakes__content {
   max-width: 545px;
   width: 100%;
@@ -511,14 +492,10 @@ body:has(.menu-toggler-btn.active) {
   margin-bottom: 100px;
 }
 
-.pancakes-slider-small {}
-
 .small-slider {
   position: relative;
   padding: 0 40px;
 }
-
-.small-slider__item {}
 
 .small-slider__img {
   display: block;
@@ -836,7 +813,6 @@ body:has(.menu-toggler-btn.active) {
     &:hover {
       color: $color-white;
       background-color: rgb(164, 125, 94);
-      ;
     }
   }
 }
@@ -923,8 +899,6 @@ body:has(.menu-toggler-btn.active) {
   transform: scale(1.1);
 }
 
-/*--------------------------*/
-
 /*----------- JIBARITO ----------------------*/
 
 .jibarito {
@@ -1004,13 +978,9 @@ body:has(.menu-toggler-btn.active) {
   color: #979285;
 }
 
-.jibarito__ingredients-description {}
-
 .jibarito__picture {
   position: relative;
 }
-
-.jibarito__picture-box {}
 
 .jibarito__picture-img {
   margin-top: -40px;
@@ -1107,15 +1077,12 @@ body:has(.menu-toggler-btn.active) {
   }
 }
 
-
 /*---------- FOOTER -----------*/
 
 .footer {
   background-color: #f3f1e9;
   padding: 15px 0 70px;
 }
-
-.footer__inner {}
 
 .footer__nav {
   display: flex;
@@ -1265,7 +1232,6 @@ body:has(.menu-toggler-btn.active) {
   .jibarito__picture-button {
     left: 90px;
   }
-
 }
 
 @media screen and (max-width: 929px) {
@@ -1319,7 +1285,6 @@ body:has(.menu-toggler-btn.active) {
   .jibarito__picture-button {
     left: 0;
   }
-
 }
 
 @media screen and (max-width: 785px) {
@@ -1455,7 +1420,6 @@ body:has(.menu-toggler-btn.active) {
   }
 
 }
-
 
 @media screen and (max-width: 560px) {
 
